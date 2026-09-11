@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Development Paths</title>
+    <title>Development Paths - Accio Jobs</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
-    <h1>Welcome to Accio Jobs!</h1>
+    <main class="max-w-2xl mx-auto px-4 py-12 flex-grow w-full flex flex-col items-center text-center">
+        <section class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100 w-full">
+            
+            <!-- H1 Element -->
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
+                Welcome to Accio Jobs!
+            </h1>
 
-    <img src="IMAGE_URL_HERE" alt="Development paths" height="300px">
+            <!-- Image with height 300px -->
+            <div class="mb-6 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" 
+                     alt="Developer workspace" 
+                     style="height: 300px;"
+                     class="object-cover rounded-xl shadow-md w-full max-w-md"
+                     onerror="this.src='https://placehold.co/600x300/e2e8f0/475569?text=Developer+Workspace'">
+            </div>
 
-    <p>5 software program developer profession paths</p>
+            <!-- Paragraph -->
+            <p class="text-lg text-slate-600 mb-8 font-medium">
+                5 software program developer profession paths
+            </p>
 
-    <ul>
-        <li>Cloud development</li>
-        <li>Desktop development</li>
-        <li>Video Sport development</li>
-        <li>Mobile development</li>
-        <li>Web development</li>
-    </ul>
+            <!-- Unordered List with 5 development paths -->
+            <ul class="space-y-3 text-left max-w-md mx-auto bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <li class="bg-white p-3 rounded-lg shadow-sm border border-slate-100 font-medium text-slate-700">Cloud development</li>
+                <li class="bg-white p-3 rounded-lg shadow-sm border border-slate-100 font-medium text-slate-700">Desktop development</li>
+                <li class="bg-white p-3 rounded-lg shadow-sm border border-slate-100 font-medium text-slate-700">Video Sport development</li>
+                <li class="bg-white p-3 rounded-lg shadow-sm border border-slate-100 font-medium text-slate-700">Mobile development</li>
+                <li class="bg-white p-3 rounded-lg shadow-sm border border-slate-100 font-medium text-slate-700">Web development</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-6 px-4 text-center text-sm">
+        <p>&copy; Accio Jobs • Explore your software career path today 🚀</p>
+    </footer>
 
 </body>
 </html>
